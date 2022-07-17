@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu projeto de portfólio</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div>
+                <img class="perfil" src="img/boaz.jpg" width="200" alt="Boaz feliz numa festa.">
+            </div>
+            <button class="botao-menu">&#9776;</button>
+            <ul>
+                <li>
+                    <a href="#sobreMim">Sobre mim</a>
+                </li>
+
+                <li>
+                    <a href="#estudos">Estudos</a>
+                </li>
+
+                <li>
+                    <a href="#github">Github</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3 id="sobreMim">Sobre mim</h3>
+        <p>Me chamo Boaz Destin, tenho 37 anos, sou casado há 6 anos, moro com mihna esposa. Sou haitiano, <br>
+            estou no brasil há 6 anos. Trabalhei como voluntário numa organização internacional durante <br>
+            vários anos no ramo da construção civil. Amo realisar sonos das pessoas ao construir suas tão <br>
+            sonhadas casas. Agora com a ajuda da toti e meus esforços, poderei construir páginas ao gosto <br>
+            dos solicitantes.
+        </p>
+
+        <h3 id="estudos">Estudos</h3>
+        <ol>
+            <li>Cursando de engenharia civil - UNICID</li>
+            <li>AUTOCAD (2016)</li>
+            <li>Técnica de edificação (2005-2007)</li>
+            <li>Encanador (2009)</li>
+        </ol>
+
+
+        <h3 id="github">Github</h3>
+        <div class="contato" id="github">
+            <div>
+                <b><label class="github_api" for="github">Dá só um click no botão abaixo e listar os meus Repositórios do Github:
+                </label></b></div>
+            <div id="repos"></div>
+    
+        <button onclick="github(this)"
+            class=btn type="submit" id="submitBtn" value="Submit"><b>Listar</b></button>
+        </div><br>
+        <div class="container_reposit" id="listRepos">    
+            <div>
+                <h4>Meus Repositórios:</h4>
+                <p id="nomeGitHub"></p>
+            </div><br>
+            <div>
+                <h4>Link dos respectivos Repositórios:</h4>
+                <p id="linkGitHub"></p>
+            </div>
+        </div>
+
+        <h3 id="contato">Contato</h3>
+
+        <div>Deixe me uma mensagem o contateme nas minha redes socias</div>
+        <form class="contato" id="myform">
+            <div  class="alert"></div><br>
+            <div>
+                <label class="titulo_form" for="nome">NOME:</label><br>
+                <input class="quadro_form"
+                type="text"
+                name="nome"
+                id="nome" onsubmit='valida()'></input type="submit">
+            </div><br>
+            
+            <div>
+                <label class="titulo_form" for="email">E-MAIL:</label><br>
+                <input class="quadro_form"
+                type="email"
+                name="email"
+                id="email" onsubmit='valida()'
+                placeholder="...@seumail.com"></input type="submit">
+            </div><br>
+        
+            <div>
+                <label class="titulo_form" for="assunto">ASSUNTO:</label><br>
+                <input class="quadro_form"
+                type="text"
+                name="assunto"
+                id="assunto" onsubmit="valida()"></input type="submit">
+            </div><br>
+        
+            <label class="titulo_form" for="mensagem">DEIXE SUA MENSAGEM:</label><br>
+            <textarea class="mensagem" name="texto" id="mensagem"
+            cols="49" rows="7" maxlength="100" onsubmit='valida()'>
+            </textarea type="submit"><br>
+        
+            <button onclick="clickedLink()" 
+            class=btn type="submit" id="submitbutton" value="Submit"><b>Enviar</b>
+        </button>
+        </form><br>
+
+        <section>
+            <a href="https://github.com/BoazD2022" target="_blan" fel="noopener">
+                <img src="img/github.png" width="40" height="40">
+            </a>
+
+            <a href="https://www.linkedin.com/in/boaz-destin-ab9561221/" target="_blan" fel="noopener">
+                <img src="img/linkedin.png" width="40" height="40">
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5511965802332" target="_blan" fel="noopener">
+                <img src="img/whatsapp.png" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/woobieboaz/" target="_blan" fel="noopener">
+                <img src="img/instagram.png" width="40" height="40">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100009147478746" target="_blan" fel="noopener">
+                <img src="img/facebook.png" width="40" height="40">
+            </a>
+        </section>
+        <div>&copy; Cool Woobie</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
